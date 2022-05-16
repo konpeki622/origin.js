@@ -1,9 +1,9 @@
-name: Publish @originjs/cli to NPM Registry
+name: Publish
 
 on:
-  release:
-    types: 
-      - created
+  push:
+    tags:
+      - 'cli@*' # Push events to matching cli@*, i.e. cli@1.0, cli@20.15.10
 
 jobs:
   publish:
